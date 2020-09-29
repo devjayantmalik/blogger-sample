@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Index Page</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
   </head>
   <body>
-    <main>
-      <h1>Index Page</h1>
+    <main class="container">
+      <h1 class="heading">Our Own google engine</h1>
+
+      <form action="https://google.com/search" method="GET">
+        <div>
+          <label for="search_query">Search Query</label>
+          <input id="search_query" name="q" placeholder="Enter your search" />
+        </div>
+        <div>
+          <button type="submit">Search On Google</button>
+        </div>
+      </form>
     </main>
   </body>
 </html>

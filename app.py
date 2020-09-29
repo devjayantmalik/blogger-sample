@@ -7,6 +7,14 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/facebook", methods=["GET"])
+def facebook():
+    return render_template("facebook.html")
+
+@app.route('/google', methods=['GET'])
+def google():
+    return render_template("google.html")
+
 @app.route('/login', methods=["GET", "POST"])
 def login():
     if request.method == "GET":
